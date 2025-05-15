@@ -1,0 +1,7 @@
+{
+    "API_KEY":"YOUR_API_KEY",
+    "url":"YOUT_API_URL",
+    "image_path":"./Images/",
+    "output_path":"./Output/",
+    "allowed_extensions": [".jpg", ".jpeg", ".png", ".gif"]
+}
