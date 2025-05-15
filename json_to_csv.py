@@ -21,6 +21,6 @@ def json_to_csv(data, file_name):
                 cell_text = ' '.join(item['inferText'] for item in cellWords['cellWords'] if item.get('inferText'))
                 csv_data[row_index][col_index] += cell_text
             
-        with open(file_name + f'_{i}.csv', 'w', newline='', encoding='utf-8') as f:
+        with open(file_name + f'_{i}.csv', 'w', newline='', encoding='utf-8-sig') as f:
             writer = csv.writer(f)
             writer.writerows(csv_data)
