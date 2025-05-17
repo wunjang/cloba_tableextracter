@@ -2,7 +2,9 @@ import csv
 
 def json_to_csv(data, file_name):
     # Assuming you have one image and want the first table
-    tables = data['images'][0]['tables']
+    tables = data['images'][0].get('tables')
+    if not tables:
+        return
 
     for i, table in enumerate(tables):
         cells = table['cells']
